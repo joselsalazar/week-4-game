@@ -1,0 +1,7 @@
+Student Notes
+
+HTML - Left off on Declaration. Will need to have that populate with a you win/you lose text based on outcome.
+
+CSS - Finish FF-themed look. Need a bg for main to make the text and background not come together.
+
+JS - Need to create new function/something that poplulates when player wins or loses. Needs to have some delay effect, so game can continue. Also, need to get the win/lose condition working. Currently not working...
