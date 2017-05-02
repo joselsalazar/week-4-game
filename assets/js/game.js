@@ -10,14 +10,19 @@ function targetV() {
 targetV();
 
 $('.target-value').text("Target Value: " + targetValue);
+$('.wins').text("Wins: " + wins);
 
 $('button').click(function(){
    theTotal = Number(theTotal) + Number($(this).val());
-    $('.total').text("Total: "+theTotal);        
+    $('.total').text("Total: "+theTotal);      
+
+    if (targetValue === theTotal) {
+    	wins++;
+    	targetV();
+    	theTotal = 0;
+    } else if (targetValue < theTotal) {
+    	location.reload();
+    }
 });
 
 $('.total').text("Total: "+theTotal);
-
-if (targetValue === theTotal) {
-	wins++;
-}
