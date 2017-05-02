@@ -110,10 +110,15 @@ button:hover {
 
 .total,
 .target-value,
-.wins {
+.wins,
+.declaration {
   font-weight: bold;
   color: #fff;
   font-size: 5em;
+}
+
+.hide-me {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
