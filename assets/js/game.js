@@ -17,9 +17,13 @@ function getRandom(arr) {
 	return randomNum;
 }
 
-for (var i = 1; i < 5; i++) {
-	$('.btn-' + i).val(getRandom(crystalValues));
+function crystalValue() {
+	for (var i = 1; i < 5; i++) {
+		$('.btn-' + i).val(getRandom(crystalValues));
+	}
 }
+
+crystalValue();
 
 $('.target-value').text("Target Value: " + targetValue);
 $('.wins').text("Wins: " + wins);
@@ -36,6 +40,7 @@ $('button').click(function(){
     	$('.target-value').text("Target Value: " + targetValue);
     	theTotal = 0;
     	$('.total').text("Total: "+theTotal);
+    	crystalValue();
     } else if (targetValue < theTotal) {
     	$('.declaration').html("<p>You Lose!</p>" + "<p>Loser!</p>");
     	$('.total, .target-value, .wins').addClass('hide-me');
