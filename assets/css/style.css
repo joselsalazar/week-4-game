@@ -60,8 +60,58 @@ table {
 ===========================*/
 body {
   width: 100%;
-  font-family: 'Playfair Display', serif;
-  background: url("../img/dungeon-wallpaper.jpg");
+  font-family: 'Times New Roman', sans-serif;
+  text-shadow: 1px 1px 5px #000;
+}
+
+body.change-0 {
+  background: url("../img/level-0.jpg") no-repeat #000;
+  background-size: cover;
+}
+
+body.change-1 {
+  background: url("../img/level-1.jpg") no-repeat #000;
+  background-size: cover;
+}
+
+body.change-2 {
+  background: url("../img/level-2.jpg") no-repeat #000;
+  background-size: cover;
+}
+
+body.change-3 {
+  background: url("../img/level-3.jpg") no-repeat #000;
+  background-size: cover;
+}
+
+body.change-4 {
+  background: url("../img/level-4.jpg") no-repeat #000;
+  background-size: cover;
+}
+
+body.change-5 {
+  background: url("../img/level-5.jpg") no-repeat #000;
+  background-size: cover;
+}
+
+body.change-6 {
+  background: url("../img/level-6.jpg") no-repeat #000;
+  background-size: cover;
+}
+
+body.change-7 {
+  background: url("../img/level-7.jpg") no-repeat #000;
+  background-size: cover;
+}
+
+body.change-8 {
+  background: url("../img/level-8.jpg") no-repeat #000;
+  background-size: cover;
+}
+
+body.change-9 {
+  background: url("../img/level-9.jpg") no-repeat #000;
+  background-size: cover;
 }
 
 main {
@@ -74,12 +124,17 @@ main {
 main h1 {
   text-align: center;
   color: #fff;
-  font-size: 2.6em;
+  font-size: 5em;
+  font-weight: bold;
   padding-top: 25px;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+.buttons {
+  margin-top: 30px;
 }
 
 .btn {

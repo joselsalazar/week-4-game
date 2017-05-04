@@ -40,6 +40,10 @@ $('button').click(function(){
     	$('.target-value').text("Target Value: " + targetValue);
     	theTotal = 0;
     	$('.total').text("Total: "+theTotal);
+    	var changeIt = "change-" + wins;
+    	var back = wins - 1;
+    	var changeRemove = "change-" + back;
+    	$('#main-bg').addClass(changeIt).removeClass(changeRemove);
     	crystalValue();
     } else if (targetValue < theTotal) {
     	$('.declaration').html("<p>You Lose!</p>" + "<p>Loser!</p>");

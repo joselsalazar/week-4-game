@@ -10,9 +10,17 @@
 
 body {
 	width: 100%;
-	font-family: 'Playfair Display', serif;
-	background: url('../img/dungeon-wallpaper.jpg');
+	font-family: 'Times New Roman', sans-serif;
+	text-shadow: 1px 1px 5px #000;
 }
+
+@for $i from 0 through 9 {
+	body.change-#{$i} {
+		background: url('../img/level-#{$i}.jpg') no-repeat #000;
+		background-size: cover;
+	}	
+}
+
 
 main {
 	height: 700px;
@@ -24,7 +32,8 @@ main {
 main h1 {
 	text-align: center;
 	color: #fff;
-	font-size: 2.6em;
+	font-size: 5em;
+	font-weight: bold;
 	padding-top: 25px;
 }
 
@@ -32,6 +41,10 @@ button {
 	&:hover {
 		cursor: pointer; 
 	}
+}
+
+.buttons {
+	margin-top: 30px;
 }
 
 .btn {
